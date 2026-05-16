@@ -1,0 +1,95 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "The Unique Lama",
+      "releaseDate": "2019",
+      "posterPath": "images/public_images_The Unique Lama.jpg"
+    },
+    {
+      "id": "2",
+      "title": "The Avengers",
+      "releaseDate": "2012",
+      "posterPath": "images/avengers.jpg"
+    },
+    {
+      "id": "3",
+      "title": "The Cheetah Girls: One World",
+      "releaseDate": "2019",
+      "posterPath": "images/public_images_The_Cheetah_Girls_3_One_World.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Lion King",
+      "releaseDate": "2016",
+      "posterPath": "images/public_images_Lion King.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Unique 8",
+      "releaseDate": "2016",
+      "posterPath": "images/public_images_Unique 8.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Annihilation",
+      "releaseDate": "2018",
+      "posterPath": "images/annihilation.jpg"
+    },
+    {
+      "id": "7",
+      "title": "How to Train Your Dragon 2",
+      "releaseDate": "2014",
+      "posterPath": "images/dragon.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Johnny English Reborn",
+      "releaseDate": "2011",
+      "posterPath": "images/johnny.jpg"
+    },
+    {
+      "id": "9",
+      "title": "The Dark Knight",
+      "releaseDate": "2008",
+      "posterPath": "images/darkknight.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Deadpool 2",
+      "releaseDate": "2018",
+      "posterPath": "images/dp2.jpg"
+    },
+    {
+      "id": "11",
+      "title": "The Lord of the Rings",
+      "releaseDate": "2001",
+      "posterPath": "images/lord.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Monday",
+      "releaseDate": "2020",
+      "posterPath": "images/monday.jpg"
+    },
+    {
+      "id": "13",
+      "title": "The Shawshank Redemption",
+      "releaseDate": "1994",
+      "posterPath": "images/shawshank.jpeg"
+    },
+    {
+      "id": "14",
+      "title": "Tenet",
+      "releaseDate": "2020",
+      "posterPath": "images/tenet.jpg"
+    },
+    {
+      "id": "15",
+      "title": "Triangle",
+      "releaseDate": "2009",
+      "posterPath": "images/triangle.jpg"
+    }
+  ],
+  "favourites": []
+}
