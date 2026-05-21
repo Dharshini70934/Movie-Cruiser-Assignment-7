@@ -32,6 +32,7 @@ h2 {
   display: inline-block;
 }
 
+/* Movies Grid */
 #moviesList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -50,7 +51,12 @@ h2 {
   justify-content: center;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  overflow: hidden;
+}
+
+#moviesList .list-group-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(230,57,70,0.15);
+  border-color: rgba(230,57,70,0.3);
 }
 
 #moviesList .list-group-item img {
@@ -58,20 +64,59 @@ h2 {
   height: 200px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 0;
+  border-radius: 12px 12px 0 0;
   display: block;
 }
 
-#moviesList .list-group-item h5 {
-  font-size: 0.95rem;
+/* Favourites Grid */
+#favouritesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+}
+
+#favouritesList .list-group-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+#favouritesList .list-group-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 12px 12px 0 0;
+  display: block;
+}
+
+/* Text */
+#moviesList .list-group-item h5,
+#favouritesList .list-group-item h5 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 4px;
   text-align: center;
 }
 
-#moviesList .list-group-item p {
-  font-size: 0.78rem;
+#moviesList .list-group-item p,
+#favouritesList .list-group-item p {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0;
   text-align: center;
 }
 
+/* Buttons */
 .btn-primary {
   background: var(--accent) !important;
   border: none !important;
@@ -90,10 +135,24 @@ h2 {
   transform: scale(1.04);
 }
 
+.btn-danger {
+  background: #e63946 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.45rem 0.9rem !important;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.btn-danger:hover {
+  background: #c1121f !important;
+  transform: scale(1.04);
+}
+
 #favouritesList .list-group-item::before {
-  content: '★';
-  color: var(--accent2);
-  font-size: 1rem;
-  margin-right: 0.75rem;
-  flex-shrink: 0;
+  display: none;
 }
