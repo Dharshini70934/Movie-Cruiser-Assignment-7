@@ -85,6 +85,7 @@ function addFavourite(id) {
         fav => String(fav.id) === String(id)
     );
     if (alreadyExists) {
+        alert(`"${movie.title}" is already in your Favourites!`);
         return Promise.reject(new Error('Movie is already added to favourites'));
     }
 
@@ -122,6 +123,12 @@ function addFavourite(id) {
 
 /* ---------------- DELETE FAVOURITE ---------------- */
 function deleteFavourite(id) {
+    const movie = favItems.find(fav => String(fav.id) === String(id));
+    const confirmed = confirm(`Remove "${movie ? movie.title : 'this movie'}" from Favourites?`);
+    if (!confirmed) {
+        return Promise.resolve();
+    }
+
     return fetch(`${FAV_URL}/${id}`, {
         method: "DELETE"
     })
